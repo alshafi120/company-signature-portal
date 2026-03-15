@@ -1,0 +1,11 @@
+# Deny direct access to signature images
+# Images must be served through serve_signature.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule .* - [F,L]
+</IfModule>
+
+# Fallback if mod_rewrite is not available
+<IfModule !mod_rewrite.c>
+    Deny from all
+</IfModule>

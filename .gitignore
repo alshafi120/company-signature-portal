@@ -10,6 +10,7 @@ config/database.php
 # Uploads (keep directory structure)
 uploads/signatures/*
 !uploads/signatures/.gitkeep
+!uploads/signatures/.htaccess
 
 # IDE
 .idea/
