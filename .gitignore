@@ -1,0 +1,27 @@
+# PHP
+*.log
+*.cache
+*.tmp
+
+# Environment
+.env
+config/database.php
+
+# Uploads (keep directory structure)
+uploads/signatures/*
+!uploads/signatures/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+vendor/
+composer.lock
